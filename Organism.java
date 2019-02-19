@@ -3,6 +3,7 @@ package Assignment4;
 public class Organism {
 
   int energy;
+  String name;
 
   public Organism() {
     this.energy = 0;
@@ -24,13 +25,16 @@ public class Organism {
 
 
   public void decrementEnergy() {
-    this.energy -= 1;
-
+    if (this.energy > 0) {
+      this.energy -= 1;
+    } else {
+      this.energy = 0;
+    }
   } // decrementEnergy()
 
 
   // ---------------------------------WE NEED TO WORK ON THESE LATER -----------------//
- 
+
 
   public String getType() {
     return null;
