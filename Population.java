@@ -82,11 +82,13 @@ public class Population {
           this.orgs[list.get(k + counter).intValue()].incrementEnergy();
         } // for
       } // if cooperates
+      if (this.orgs[i].getEnergy() >= 10) {
       Organism orgs2 = this.orgs[i].reproduce();
       Random rand = new Random();
       int l = rand.nextInt(this.orgs.length);
       // replaces just means that we will put l in place of org 2
       this.orgs[l] = orgs2;
+      }//if reproduces
     } // for
   }// update
 
