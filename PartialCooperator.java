@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class PartialCooperator extends Organism {
 
+  public PartialCooperator() {
+this.energy = 0;
+  }
   // -------------------------------------------WE NEED TO WORK ON THESE LATER --------------
 
   @Override

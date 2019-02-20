@@ -3,7 +3,7 @@ package Assignment4;
 public class Organism {
 
   int energy;
-  String name;
+  //String name;
 
   public Organism() {
     this.energy = 0;

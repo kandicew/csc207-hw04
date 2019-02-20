@@ -13,11 +13,11 @@ public class Cooperator extends Organism {
   
   @Override
   public Organism reproduce() throws Exception {
-    
+
     if (this.getEnergy() >= 10) {
       return new Cooperator();
     } else {
-      throw new Exception("cannot reproduce");
+throw new Exception ("cannot reproduce");
     }
   } // reproduce()
   
